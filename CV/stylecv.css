@@ -1,140 +1,111 @@
-
-
 @font-face {/* définition de la police p*/
 	font-family : 'dustismoroman_regular_macroman';
-	src : url("CV/Dustismo_Roman-webfont.eot");
-	src: url("CV/Dustismo_Roman-webfont.eot?#iefix") format('embedded-opentype'),
-         url("CV/Dustismo_Roman-webfont.woff") format('woff'),
-         url("CV/Dustismo_Roman-webfont.ttf") format('truetype'),
-         url("CV/Dustismo_Roman-webfont.svg#dustismoroman_regular_macroman") format('svg');
-	
+	src: url("fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.eot"),
+		url("fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.eot?#iefix") format('embedded-opentype'),
+         url("fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.woff") format('woff'),
+         url("fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.ttf") format('truetype'),
+         url("fonts/dustismoroman_regular_macroman/Dustismo_Roman-webfont.svg#dustismoroman_regular_macroman") format('svg');
+}
+@font-face {
 	font-family : 'vision';
-	src : url("CV/vision-webfont.woff") format ("woff")
+	src : url("fonts/Vision/vision-webfont.woff") format("woff");
 }
 
-
-body
-{
+body {
 	background: url("parchemin.jpg") fixed;
-	
 }
 
-
-img
-{
-	border-width : 5px ;
-	border-color: rgb(243,214,44);
-	border-style: 	solid; 
+img {
+	border : 5px solid rgb(243,214,44);
 	box-shadow : 6px 6px 3px black;
-	
 }
-img:hover
-{
+img:hover {
 	border-color : red;
 	
 }
 
-p
-{
-	
+p {
 	font-family : dustismoroman_regular_macroman, Arial, Verdana, serif;
 	font-size : 1.2em;
 	text-align: justify;
-	width : 33%;
-	min-width: 300px; /*taille minimum du paragraphe*/
-	padding: 5px; /* marge à l'intérieur du paragraphe*/
-	margin: auto; /* pour centrer le bloc paragraphe*/
 	overflow : auto ; /* à utiliser si le texte risque de déborder du paragraphe*/
 }
 
-h1
-{
-	font-family : vision, Arial, "sans serif";
+h1, h2, h3 {
+	font-family : vision, Arial, "sans serif", serif;
+	text-align : center;
+}
+
+h1 {
+	background-color : rgb(251,224,36);
 	font-size : 2.7em; 
 	opacity : 0.6;
 	text-align: center;
-	background-color : rgb(251,224,36);
 }
 
-h2
-{
+h2 {
 	font-size : 2.1em;
-	font-family : vision, arial, sans-serif;
-	width: 20%;
-	clear : both;
-	margin-left : auto;
-	margin-right : auto;
 }
 
-h3
-{
+h3 {
 	font-size : 1.9em;
-	font-family : vision, arial, sans-serif;
-	text-align : center;
-	
 }
 
-li
-{
+li {
 	font-family : dustismoroman_regular_macroman, Arial, Verdana, serif;
 	font-size : 1.2em;
 	text-align : center;
-	
 }
 
-aside
-{
-	
-float : right;
-	margin-left : 30px;
-	margin-right: 15px;
+aside {
+	position : fixed;
+	top : 1em;
+	left : 1em;
 }
-.motcle
-{
+.motcle {
 	font-size : 2em;
 	text-align : center;
 	text-shadow: 3px 3px 6px white;
 }
 
-.t2
-{
-
-background-color : rgb(243,214,44,0.5);	
+.t2 {
+	background-color : rgba(243,214,44, 0.5);
 	text-decoration : underline overline;
-
-
 }
 
-.t3
-{
-	
-	background-color: rgb(241,200,154,0.5);
+.t3 {
+	background-color: rgba(241,200,154,0.5);
 	font-style : italic;
 }
-.dates
-{
+.dates {
 	color : rgb(233,139,54);
 	font-size: 1.4em;
 }
 
-.t4
-{
+.t4 {
 	color : rgb(233,139,54)
-	
 }
 
-#conteneur
-
-{
-	
+main {
 	display : flex;
 	justify-content: space-between;
 }
+section {
+	flex: 1;
+	padding : .6em;
+	background-color : rgba(255,255,255,0.5);
+}
+footer {
+	font-size: .75em;
+}
+footer > p {
+	text-align: center;
+}
 
-.element
-{
-
-background-color : rgb(255,255,255,0.5);
-margin-left: 30px;
-clear:both;
+ul {
+	display: inline-flex;
+}
+li {
+	list-style: none;
+	flex: 1;
 }
